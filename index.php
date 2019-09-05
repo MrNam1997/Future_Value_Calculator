@@ -11,7 +11,7 @@
 <h2>Future Value Calculator </h2>
 <form method="post">
     Investment Amount:
-    <input type="number" name="soTien"><br>
+    <input type="number" name="soTien" placeholder="usd"><br>
     Yearly Interest Rate:
     <input type="number" name="laiSuat"><br>
     Number of Years:
@@ -27,7 +27,7 @@ function tinhLaiSuat($soTienGui, $laiSuat, $soNamGui)
     $soTienTuongLai = $soTienGui;
     for ($i = 1; $i <= $soNamGui; $i++) {
         $soTienTuongLai = $soTienTuongLai + ($soTienTuongLai * $laiSuat) / 100;
-        echo "so tien lai sau " . $i. " thang la " . $soTienTuongLai . "<br >";
+        echo "so tien lai sau " . $i. " thang la " . $soTienTuongLai . "$<br >";
     }
     return $soTienTuongLai;
 
